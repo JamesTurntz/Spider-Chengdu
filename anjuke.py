@@ -19,7 +19,7 @@ for page in range(1, 31):
         tempList.append(items.eq(i).text())
         tempList.append(princes.eq(i).text())
         tempList.append(maps.eq(i).text())
-        tempList.append(lps.eq(i).text())
+        tempList.append(lps.eq(i).attr('href'))
         dataList.append(tempList)
 
     time.sleep(0.2)
